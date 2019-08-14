@@ -91,7 +91,7 @@
           return (
             parent.renderContent
               ? parent.renderContent.call(parent._renderProxy, h, { _self: parent.tree.$vnode.context, node, data, store })
-              : <span class="el-tree-node__label">{ this.node.label }</span>
+              : h('span',{attrs: {class: 'el-tree-node__label'}},this.node.label)
           );
         }
       }
