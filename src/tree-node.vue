@@ -5,7 +5,7 @@
     <div class="chu-tree-node__content"
       :style="{ 'padding-left': (node.level - 1) * tree.indent + 'px' }">
       <span :class="arrowClasses" @click.stop="handleExpandIconClick">
-          <Icon v-if="!node.isLeaf" type="arrow-right-b"></Icon>
+          <Icon v-if="!node.isLeaf" type="ios-arrow-forward"></Icon>
       </span>
       <Checkbox
         v-if="showCheckbox"
@@ -218,4 +218,7 @@
     height: 36px;
     cursor: pointer;
 }
+</style>
+<style scoped>
+ 
 </style>
